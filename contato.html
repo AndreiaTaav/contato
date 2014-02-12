@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Formul&aacute;rio de contato HTML5</title>
+        <link rel="stylesheet" media="screen" href="estilo_alinhado.css" />
+    </head>
+
+    <body>
+        <form class="formulario_contato" action="#" method="post" name="formulario_contato">
+            <header>
+                <h2>Entre em contato:</h2>
+                <span class="notificacao_required">* Indica campo obrigat&oacute;rio</span>
+            </header>
+
+            <section> 
+                <input type="text" id="name" placeholder="Formato: Nome Sobrenome" required autofocus tabindex="1"/>
+                <label for="name">Nome:</label>
+            </section>
+
+            <section>                
+                <input type="email" id="email" placeholder="Formato: nome@exemplo.com.br" required tabindex="2"/>
+                <label for="email">Email:</label>
+            </section>
+
+            <section>
+                <select id="interesse" required tabindex="3">
+                    <option value="">Selecione...</option>
+                    <optgroup label="Atendimento inicial">
+                        <option>Or&ccedil;amento</option>
+                        <option>Sugest&atilde;o</option>
+                        <option>D&uacute;vida</option>
+                    </optgroup>
+                    <optgroup label="Manuten&ccedil;&atilde;o">
+                        <option>Site fora do ar</option>
+                        <option>Mudan&ccedil;a de dom&iacute;nio</option>
+                        <option>Cria&ccedil;&atilde;o de login</option>
+                    </optgroup>
+                </select>
+                <label for="interesse">Interesse:</label>
+            </section>
+
+            <section>                
+                <input type="url" id="website" placeholder="Formato: http://site.com.br" pattern="(http|https)://.+" tabindex="4" />                
+                <label for="website">Website:</label>
+            </section>
+
+            <section>
+                <textarea name="message" cols="40" rows="6" required tabindex="5"></textarea>
+                <label for="message">Mensagem:</label>
+            </section>
+
+            <section>
+                <button class="submit" type="submit" tabindex="6">Enviar</button>
+            </section>
+        </form>
+    </body>
+</html>
